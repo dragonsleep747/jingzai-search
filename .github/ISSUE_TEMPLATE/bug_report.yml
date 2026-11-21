@@ -1,0 +1,67 @@
+name: 缺陷报告
+description: 报告索引失败、编码问题、命中位置错误或界面缺陷
+title: '[Bug] '
+labels: ['bug']
+assignees: ['dragonsleep747']
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 索引失败 / 漏索引
+        - 中文或 PDF 编码 / 解析异常
+        - 命中位置、上下文或章节链错误
+        - 查询语法 / 排序不符合预期
+        - Qt / Tkinter 界面缺陷
+        - 打包或启动问题
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: 例如 Windows 11 24H2
+  - type: input
+    id: python
+    attributes:
+      label: Python 版本 / 体验版或提交 SHA
+      placeholder: 例如 Python 3.12.7 / 最新版本提交 SHA
+  - type: input
+    id: filetype
+    attributes:
+      label: 文件类型与相关可选组件
+      placeholder: 例如 docx；Tesseract / poppler / SumatraPDF / Ollama
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 用自建示例文件复现，不要贴真实资料内容
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望与实际结果、查询词
+      description: 查询词可用虚构示例
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脱敏日志或截图说明
+      description: 只贴错误摘要 / 堆栈；不要贴密钥、令牌或真实文档内容
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我没有上传真实文档内容、索引数据库、配置、令牌或 API key
+          required: true
+        - label: 我已搜索现有 Issue，避免重复
+          required: true

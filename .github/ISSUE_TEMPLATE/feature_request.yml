@@ -1,0 +1,32 @@
+name: 功能建议
+description: 提出可讨论的功能或体验改进
+title: '[Enhancement] '
+labels: ['enhancement']
+assignees: ['dragonsleep747']
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决什么问题
+      description: 请说明实际场景，不要贴真实资料内容
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 考虑过的替代方案 / 相关文档
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我已看过 ROADMAP.md 和现有 Issue
+          required: true
+        - label: 本建议不包含真实资料、密钥或账号信息
+          required: true

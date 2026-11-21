@@ -62,9 +62,13 @@ Inno Setup 6（生成安装包）。`search_app/requirements.txt` 列出全部 p
 
 ```powershell
 python search_app\tests\run_tests.py                 # stdlib unittest 套件
+python -m compileall -q search_app tools           # 语法检查
+python tools\check_public_repo.py                   # 公开仓库卫生检查
 python tools\exception_audit.py --out tools\audit.txt
 .\tools\build_qt.ps1                                 # 需 .venv-qt + PyInstaller + PySide6
 ```
+
+维护记录、路线图与贡献流程见 [docs/MAINTENANCE_LOG.md](docs/MAINTENANCE_LOG.md)、[ROADMAP.md](ROADMAP.md)、[CONTRIBUTING.md](CONTRIBUTING.md)。本地执行上述两条命令即可复现检查结果。
 
 打包脚本（`search_app/*.spec`）在存在 `SumatraPDF.exe` 时才会把它打进产物；
 该可执行文件为 GPLv3 第三方组件，**不随本源码仓库分发**，请自行从上游获取。
@@ -88,6 +92,8 @@ python tools\exception_audit.py --out tools\audit.txt
 ## 许可与第三方组件
 
 - 本仓库源码与文档：[MIT License](LICENSE)，Copyright (c) 2026 SleepDragon。
+- 维护者、路线图、变更日志与真实维护留痕：[MAINTAINERS.md](MAINTAINERS.md)、[ROADMAP.md](ROADMAP.md)、[CHANGELOG.md](CHANGELOG.md)、[docs/MAINTENANCE_LOG.md](docs/MAINTENANCE_LOG.md)。
+- 本地检查：`python -m compileall -q search_app tools` 与 `python tools/check_public_repo.py`，拦截数据库、二进制、本机路径和密钥形态字符串。
 - Release 中的 Windows 体验版 ZIP：按包内随附的《用户许可协议》提供，与源码许可分开。
 - 第三方组件（Qt 6.12 / PySide6 / SumatraPDF 3.6.1 / Tesseract / poppler / 各 pip 依赖）
   各自适用其上游许可，详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 与 Release 说明。

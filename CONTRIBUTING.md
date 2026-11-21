@@ -3,6 +3,8 @@
 欢迎通过 GitHub Issue 报告索引失败、编码问题、命中位置错误或 UI 缺陷；提交 PR 前请：
 
 ```powershell
+python -m compileall -q search_app tools
+python tools\check_public_repo.py
 python search_app\tests\run_tests.py
 python tools\exception_audit.py --out tools\audit.txt
 ```
