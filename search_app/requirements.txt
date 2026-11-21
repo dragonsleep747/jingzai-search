@@ -1,0 +1,39 @@
+# 镜仔搜索 · 文件内容检索 依赖清单
+# 安装: pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# === 文档解析 ===
+python-docx          # .docx
+openpyxl             # .xlsx
+python-pptx          # .pptx
+pdfplumber           # .pdf 文本提取
+olefile              # .doc / .xls / .ppt 老 Office 二进制
+
+# === 编码识别 ===
+chardet              # 自动编码检测
+
+# === 压缩包遍历 ===
+py7zr                # .7z
+rarfile              # .rar（需 unrar.exe 在 PATH，否则跳过）
+# zipfile 为 Python 标准库，无需安装
+
+# === 文件监听 ===
+watchdog             # 文件变更实时增量索引
+
+# === 手机扫码配对 ===
+qrcode               # 生成配对二维码（依赖 pillow，已在上方）
+
+# === 联网检索 ===
+requests             # HTTP 请求（制度/法规/标准搜索与下载）
+
+# === OCR（可选，需另装 Tesseract-OCR） ===
+pytesseract          # Tesseract Python 封装
+pdf2image            # PDF 转图片（需另装 poppler）
+pillow               # 图像处理
+
+# === 外部组件（非 pip，需手动安装） ===
+# Tesseract-OCR: https://github.com/UB-Mannheim/tesseract/wiki
+#   安装时勾选 Additional language data → Chinese (Simplified)
+#   默认路径 C:\Program Files\Tesseract-OCR
+# poppler: https://github.com/oschwartz10612/poppler-windows/releases
+#   解压到 C:\Program Files\poppler
+#   把 C:\Program Files\poppler\Library\bin 加到 PATH

@@ -1,0 +1,456 @@
+
+## ai_qa.py: 宽泛 except 共 12 处
+   - assign: 3
+   - call:sleep: 1
+   - flow: 1
+   - pass: 3
+   - re-raise: 1
+   - return: 3
+
+## anim.py: 宽泛 except 共 23 处
+   - assign: 3
+   - pass: 18
+   - return: 1
+   - unknown: 1
+
+## detector.py: 宽泛 except 共 3 处
+   - assign: 1
+   - return: 2
+
+## indexer.py: 宽泛 except 共 47 处
+   - assign: 4
+   - call:remove: 1
+   - call:rmtree: 1
+   - call:rollback: 4
+   - log:_record_error: 5
+   - pass: 20
+   - re-raise: 1
+   - return: 6
+   - unknown: 5
+
+## ipc.py: 宽泛 except 共 10 处
+   - assign: 1
+   - call:sleep: 1
+   - pass: 4
+   - return: 4
+
+## main.py: 宽泛 except 共 306 处
+   - assign: 45
+   - call:Popen: 1
+   - call:_toast: 2
+   - call:after: 5
+   - call:append: 1
+   - call:configure: 2
+   - call:geometry: 1
+   - call:pack_forget: 1
+   - flow: 7
+   - log:record_error: 4
+   - log:showerror: 10
+   - pass: 186
+   - return: 25
+   - unknown: 16
+
+## mobilesvc.py: 宽泛 except 共 26 处
+   - assign: 2
+   - call:_send: 5
+   - log:_log_all: 1
+   - pass: 7
+   - return: 10
+   - unknown: 1
+
+## parsers.py: 宽泛 except 共 24 处
+   - assign: 4
+   - flow: 3
+   - pass: 10
+   - re-raise: 6
+   - return: 1
+
+## qa_win.py: 宽泛 except 共 58 处
+   - assign: 9
+   - call:configure: 1
+   - call:geometry: 1
+   - call:put: 5
+   - flow: 3
+   - log:showerror: 3
+   - pass: 29
+   - return: 3
+   - unknown: 4
+
+## quickwin.py: 宽泛 except 共 25 处
+   - assign: 7
+   - pass: 11
+   - return: 7
+
+## searcher.py: 宽泛 except 共 3 处
+   - assign: 1
+   - pass: 2
+
+## tray.py: 宽泛 except 共 14 处
+   - assign: 2
+   - pass: 11
+   - return: 1
+
+## watcher.py: 宽泛 except 共 10 处
+   - call:print_exc: 3
+   - flow: 1
+   - pass: 6
+
+## websearch.py: 宽泛 except 共 4 处
+   - flow: 1
+   - pass: 2
+   - unknown: 1
+
+## winchrome.py: 宽泛 except 共 43 处
+   - assign: 3
+   - pass: 29
+   - return: 11
+
+======================================================================
+合计宽泛 except：608 处；按处理模式分布：
+   pass: 338
+   assign: 85
+   return: 74
+   unknown: 28
+   flow: 16
+   log:showerror: 13
+   re-raise: 8
+   log:_record_error: 5
+   call:after: 5
+   call:_send: 5
+   call:put: 5
+   call:rollback: 4
+   log:record_error: 4
+   call:configure: 3
+   call:print_exc: 3
+   call:sleep: 2
+   call:_toast: 2
+   call:geometry: 2
+   call:rmtree: 1
+   call:remove: 1
+   call:pack_forget: 1
+   call:Popen: 1
+   call:append: 1
+   log:_log_all: 1
+
+吞掉式（pass/return/flow/assign/unknown）文件数：15
+
+--- ai_qa.py：10 处可疑吞掉 ---
+   L124: except Exception:
+   L176: except Exception:
+   L180: except Exception:
+   L262: except Exception:
+   L302: except Exception:
+   L694: except Exception:
+   L194: except Exception:
+   L363: except Exception:
+   L781: except Exception:
+   L893: except Exception:
+
+--- anim.py：23 处可疑吞掉 ---
+   L25: except Exception:
+   L305: except Exception:
+   L474: except Exception:
+   L502: except Exception:
+   L257: except Exception:
+   L263: except Exception:
+   L277: except Exception:
+   L292: except Exception:
+   L360: except Exception:
+   L543: except Exception:
+   L555: except Exception:
+   L562: except Exception:
+   L609: except Exception:
+   L133: except Exception:
+   L156: except Exception:
+   L196: except Exception:
+   L372: except Exception:
+   L387: except Exception:
+   L393: except Exception:
+   L505: except Exception:
+   L571: except Exception:
+   L165: except Exception:
+   L205: except Exception:
+
+--- detector.py：3 处可疑吞掉 ---
+   L43: except Exception:
+   L75: except Exception:
+   L92: except Exception:
+
+--- indexer.py：35 处可疑吞掉 ---
+   L449: except Exception:
+   L794: except Exception:
+   L1014: except Exception as e:
+   L1401: except Exception as e:
+   L1462: except Exception:
+   L1621: except Exception:
+   L1677: except Exception:
+   L1969: except Exception as e:
+   L2149: except Exception as e:
+   L2195: except Exception as e:
+   L2363: except Exception:
+   L2716: except Exception as e:
+   L408: except Exception:
+   L894: except Exception:
+   L1000: except Exception:
+   L1439: except Exception:
+   L1496: except Exception:
+   L1561: except Exception as e:
+   L1596: except Exception as e:
+   L1644: except Exception as e:
+   L1668: except Exception:
+   L1930: except Exception:
+   L2080: except Exception:
+   L2188: except Exception:
+   L913: except Exception:
+   L1405: except Exception:
+   L1490: except Exception:
+   L1507: except Exception:
+   L1608: except Exception:
+   L2144: except Exception:
+   L2719: except Exception:
+   L843: except Exception:
+   L857: except Exception:
+   L870: except Exception:
+   L1601: except Exception:
+
+--- ipc.py：9 处可疑吞掉 ---
+   L30: except Exception:
+   L45: except Exception:
+   L88: except Exception:
+   L117: except Exception:
+   L125: except Exception:
+   L139: except Exception:
+   L162: except Exception:
+   L166: except Exception:
+   L132: except Exception:
+
+--- main.py：279 处可疑吞掉 ---
+   L78: except Exception:
+   L85: except Exception:
+   L90: except Exception:
+   L95: except Exception:
+   L101: except Exception:
+   L109: except Exception:
+   L116: except Exception:
+   L123: except Exception:
+   L374: except Exception:
+   L379: except Exception:
+   L225: except Exception:
+   L281: except Exception:
+   L522: except Exception:
+   L535: except Exception:
+   L13520: except Exception:
+   L208: except Exception:
+   L223: except Exception:
+   L287: except Exception:
+   L292: except Exception:
+   L296: except Exception:
+   L572: except Exception:
+   L903: except Exception:
+   L935: except Exception:
+   L1081: except Exception:
+   L1222: except Exception:
+   L1319: except Exception:
+   L1344: except Exception:
+   L1428: except Exception:
+   L1741: except Exception:
+   L1864: except Exception:
+   L1871: except Exception:
+   L1891: except Exception:
+   L1898: except Exception:
+   L2038: except Exception:
+   L2050: except Exception:
+   L2106: except Exception:
+   L2166: except Exception:
+   L2179: except Exception:
+   L2198: except Exception:
+   L2217: except Exception:
+
+--- mobilesvc.py：20 处可疑吞掉 ---
+   L78: except Exception:
+   L144: except Exception:
+   L743: except Exception:
+   L759: except Exception:
+   L782: except Exception:
+   L861: except Exception:
+   L886: except Exception:
+   L907: except Exception:
+   L921: except Exception:
+   L1034: except Exception:
+   L1404: except Exception:
+   L1621: except Exception as e:
+   L2047: except Exception:
+   L2127: except Exception:
+   L2319: except Exception:
+   L2526: except Exception:
+   L2543: except Exception:
+   L1562: except Exception:
+   L1849: except Exception:
+   L2398: except Exception:
+
+--- parsers.py：18 处可疑吞掉 ---
+   L287: except Exception:
+   L297: except Exception:
+   L345: except Exception:
+   L358: except Exception:
+   L362: except Exception:
+   L396: except Exception:
+   L571: except Exception:
+   L842: except Exception:
+   L882: except Exception:
+   L569: except Exception:
+   L605: except Exception:
+   L814: except Exception:
+   L235: except Exception:
+   L840: except Exception:
+   L874: except Exception:
+   L594: except Exception:
+   L673: except Exception:
+   L682: except Exception:
+
+--- qa_win.py：48 处可疑吞掉 ---
+   L87: except Exception:
+   L131: except Exception:
+   L139: except Exception:
+   L200: except Exception:
+   L249: except Exception:
+   L257: except Exception:
+   L495: except Exception:
+   L506: except Exception:
+   L531: except Exception:
+   L630: except Exception:
+   L649: except Exception:
+   L663: except Exception:
+   L682: except Exception:
+   L730: except Exception:
+   L772: except Exception:
+   L1064: except Exception:
+   L1253: except Exception:
+   L170: except Exception:
+   L176: except Exception:
+   L185: except Exception:
+   L221: except Exception:
+   L267: except Exception:
+   L700: except Exception:
+   L712: except Exception:
+   L720: except Exception:
+   L740: except Exception:
+   L764: except Exception:
+   L794: except Exception:
+   L925: except Exception:
+   L955: except Exception:
+   L994: except Exception:
+   L1020: except Exception:
+   L1041: except Exception:
+   L1085: except Exception:
+   L1155: except Exception:
+   L1560: except Exception as e:
+   L229: except Exception:
+   L654: except Exception:
+   L1270: except Exception:
+   L1311: except Exception:
+
+--- quickwin.py：25 处可疑吞掉 ---
+   L26: except Exception:
+   L31: except Exception:
+   L148: except Exception:
+   L166: except Exception:
+   L211: except Exception:
+   L240: except Exception:
+   L257: except Exception:
+   L293: except Exception:
+   L373: except Exception:
+   L575: except Exception:
+   L590: except Exception:
+   L673: except Exception:
+   L1070: except Exception:
+   L135: except Exception:
+   L195: except Exception:
+   L615: except Exception:
+   L640: except Exception:
+   L754: except Exception:
+   L787: except Exception:
+   L856: except Exception:
+   L1087: except Exception:
+   L127: except Exception:
+   L238: except Exception:
+   L189: except Exception:
+   L201: except Exception:
+
+--- searcher.py：3 处可疑吞掉 ---
+   L76: except Exception:
+   L69: except Exception:
+   L1762: except Exception:
+
+--- tray.py：14 处可疑吞掉 ---
+   L178: except Exception:
+   L244: except Exception:
+   L252: except Exception:
+   L280: except Exception:
+   L345: except Exception:
+   L366: except Exception:
+   L374: except Exception:
+   L393: except Exception:
+   L415: except Exception:
+   L275: except Exception:
+   L325: except Exception:
+   L340: except Exception:
+   L382: except Exception:
+   L443: except Exception:
+
+--- watcher.py：7 处可疑吞掉 ---
+   L116: except Exception:
+   L256: except Exception:
+   L262: except Exception:
+   L128: except Exception:
+   L196: except Exception:
+   L222: except Exception:
+   L180: except Exception:
+
+--- websearch.py：4 处可疑吞掉 ---
+   L513: except Exception:
+   L673: except Exception as e:
+   L793: except Exception:
+   L753: except Exception:
+
+--- winchrome.py：43 处可疑吞掉 ---
+   L51: except Exception:
+   L59: except Exception:
+   L74: except Exception:
+   L85: except Exception:
+   L100: except Exception:
+   L132: except Exception:
+   L148: except Exception:
+   L180: except Exception:
+   L211: except Exception:
+   L334: except Exception:
+   L346: except Exception:
+   L359: except Exception:
+   L518: except Exception:
+   L590: except Exception:
+   L625: except Exception:
+   L641: except Exception:
+   L700: except Exception:
+   L948: except Exception:
+   L960: except Exception:
+   L977: except Exception:
+   L998: except Exception:
+   L1022: except Exception:
+   L1046: except Exception:
+   L1148: except Exception:
+   L1177: except Exception:
+   L173: except Exception:
+   L220: except Exception:
+   L247: except Exception:
+   L255: except Exception:
+   L259: except Exception:
+   L280: except Exception:
+   L296: except Exception:
+   L306: except Exception:
+   L324: except Exception:
+   L354: except Exception:
+   L477: except Exception:
+   L610: except Exception:
+   L1034: except Exception:
+   L271: except Exception:
+   L285: except Exception:

@@ -1,0 +1,374 @@
+{
+  "review_date": "2026-10-28",
+  "status": "reviewed-qualified-prework",
+  "module_version": "0.2.0",
+  "schema_version": 2,
+  "scope": "Backend discovery prototype only; no production frontend integration or EXE replacement.",
+  "files": [
+    {
+      "path": "search_app/discovery/__init__.py",
+      "bytes": 1068,
+      "sha256": "7f2757f9cf892b6aa6f6bdb4edb0ff533c98c1a4e88fe6c5431c209684b5b542"
+    },
+    {
+      "path": "search_app/discovery/catalog.py",
+      "bytes": 32805,
+      "sha256": "b2a624da5243762d68b2529f838d84c1c3f7f01ffc86481f8aac1147745afaa9"
+    },
+    {
+      "path": "search_app/discovery/errors.py",
+      "bytes": 925,
+      "sha256": "2304e07a7f127bfde70d1352db555ec47014973917d5a737b5d2f1f35987cd88"
+    },
+    {
+      "path": "search_app/discovery/filters.py",
+      "bytes": 5144,
+      "sha256": "8d628d912e9fc0648be770aebbf9217d1b15d4c35fed3c71c6947397350c5dd6"
+    },
+    {
+      "path": "search_app/discovery/model.py",
+      "bytes": 4457,
+      "sha256": "913799e211d16f9f56e1680d5b8bbe51d6692c5fa7a5f3c798ad822aa1e52f30"
+    },
+    {
+      "path": "search_app/discovery/probe.py",
+      "bytes": 4558,
+      "sha256": "aebfbc221bdceb61677cc7b335cf98fc6b6a6caac84ee10940bd6498fbb4b9a7"
+    },
+    {
+      "path": "search_app/discovery/provider.py",
+      "bytes": 13158,
+      "sha256": "244c623478c980bd7b14de3100c0123dcee1efd984aa9a5eec16b9deb11c7a80"
+    },
+    {
+      "path": "search_app/discovery/scan.py",
+      "bytes": 8042,
+      "sha256": "67598dac28f22c32789d5b2442c9544d069d56bfaddc3fc9d511bebd8d906fa8"
+    },
+    {
+      "path": "search_app/discovery/schema.py",
+      "bytes": 6369,
+      "sha256": "9a5bf307cfd8472424ef77d85ccbaaca0299c8fa88bbedd2b34e889a1f992697"
+    },
+    {
+      "path": "search_app/discovery/sync.py",
+      "bytes": 6266,
+      "sha256": "cb480ffcb7acd1cfe60623b845f41ac57e36a9936997dba27b5dbdd2e951d24f"
+    },
+    {
+      "path": "search_app/discovery/usn.py",
+      "bytes": 11600,
+      "sha256": "693435f4514424198c0e80098b7019541cccf5418092e7cce3074ae35d3ced5b"
+    },
+    {
+      "path": "search_app/discovery/watch.py",
+      "bytes": 6767,
+      "sha256": "a7f5a9e656495f18ef62cb6dbaa410a22da7542223a100d10a688d8501ee9620"
+    },
+    {
+      "path": "search_app/tests/test_discovery_catalog.py",
+      "bytes": 7231,
+      "sha256": "048e9ce484d27951a73393f349d5cba8fae19891806dc028fde2b8b8072e1ce1"
+    },
+    {
+      "path": "search_app/tests/test_discovery_filters.py",
+      "bytes": 2544,
+      "sha256": "d37559d991b32b61ad1a1e16977df41166b7420f7511e7d44586bed10ddd92ca"
+    },
+    {
+      "path": "search_app/tests/test_discovery_review.py",
+      "bytes": 18028,
+      "sha256": "e34d7a18e318db568d1b87c6375091d4d04586b7b81a7b4945a492ca794dc803"
+    },
+    {
+      "path": "search_app/tests/test_discovery_scan.py",
+      "bytes": 4705,
+      "sha256": "cc07ea2dc6a5fcb06f4103810fa5b5e8bb5b0bddc0d753cada0f7cb52f72e519"
+    },
+    {
+      "path": "search_app/tests/test_discovery_sync.py",
+      "bytes": 3523,
+      "sha256": "83fa7f00f94b96f04563d2a09ac66530e1675bb35654aeee50e5d055127bbbe3"
+    },
+    {
+      "path": "search_app/tests/test_discovery_usn.py",
+      "bytes": 3611,
+      "sha256": "2a4e0aa560e30f13cec7288e392163e770e687732eca33b9889c90af0650b970"
+    },
+    {
+      "path": "tools/discovery_benchmark.py",
+      "bytes": 7521,
+      "sha256": "bc89513af0c0538859e6e74b3c2c4c5f92621f26389cd6bab92aefabdeab6234"
+    },
+    {
+      "path": "tools/discovery_demo.py",
+      "bytes": 3805,
+      "sha256": "47de0da3b9ac01df4c60c4744f9d49f1df2f05de66e42b47ab9d18f8c7809fae"
+    },
+    {
+      "path": "tools/discovery_probe.py",
+      "bytes": 1851,
+      "sha256": "cbc3b28566f00a5ca1369b05f31ae3b05d8c3e15e4c0c167cd39578e8daed28f"
+    },
+    {
+      "path": "docs/discovery_prework/ARCHITECTURE.md",
+      "bytes": 9862,
+      "sha256": "c0814fcf86d89ee3cf4d0be8f98d9691984eef747ca5e97d2d8f6192f05cf0d6"
+    },
+    {
+      "path": "docs/discovery_prework/HANDOFF.md",
+      "bytes": 4150,
+      "sha256": "75b2cca89f64ec385c8bac5f6bbd357434cf2c176cea2accf0ca8a697ec65449"
+    },
+    {
+      "path": "docs/discovery_prework/VALIDATION.md",
+      "bytes": 6482,
+      "sha256": "5c2666eaedb78586fbeba6427d46f6392441988b94f099690a283919c058716e"
+    },
+    {
+      "path": "docs/discovery_prework/REVIEW.md",
+      "bytes": 6118,
+      "sha256": "442fae11ff9e946307a8adf36ae6fcfc1064f0f064ac293ad8bb31b2451c9760"
+    }
+  ],
+  "tests": {
+    "baseline_total": 255,
+    "baseline_discovery": 40,
+    "current_total": 289,
+    "current_discovery": 74,
+    "added_regressions": 34,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 15.808
+  },
+  "reproduce": {
+    "cwd": ".",
+    "all_tests": "python -c \"import platform,runpy,sys; platform._wmi_query=lambda *a,**k: (_ for _ in ()).throw(OSError('WMI disabled for test runner')); sys.argv=['search_app/tests/run_tests.py']; runpy.run_path(sys.argv[0],run_name='__main__')\"",
+    "note": "The wrapper avoids a local Windows platform/WMI hang; it does not mock discovery filesystem or USN calls."
+  },
+  "actual_checks": {
+    "migration": {
+      "version": 2,
+      "file_id": "f:0000000000000000ffffffffffffffff"
+    },
+    "tool_guards": {
+      "discovery_demo.py": {
+        "return_code": 2,
+        "preserved_catalog": true,
+        "preserved_sample": true
+      },
+      "discovery_benchmark.py": {
+        "return_code": 2,
+        "preserved_catalog": true,
+        "preserved_sample": true
+      }
+    },
+    "import": {
+      "no_files": true,
+      "no_threads": true,
+      "version": "0.2.0"
+    }
+  },
+  "native_probe": [
+    {
+      "drive": "C:\\",
+      "filesystem": "NTFS",
+      "usn_readable": false
+    },
+    {
+      "drive": "D:\\",
+      "filesystem": "NTFS",
+      "usn_readable": false
+    },
+    {
+      "drive": "E:\\",
+      "filesystem": "NTFS",
+      "usn_readable": false
+    },
+    {
+      "drive": "F:\\",
+      "filesystem": "NTFS",
+      "usn_readable": true,
+      "bounded_enum": {
+        "supported": true,
+        "journal_id": 134328034074976684,
+        "next_usn": 29755936,
+        "first_usn": 0,
+        "lowest_valid_usn": 0,
+        "records_read": 1000,
+        "paths_resolved": 992,
+        "unresolved": 8,
+        "truncated": true
+      }
+    }
+  ],
+  "synthetic_benchmark": {
+    "records": 100000,
+    "database_mib": 66.2,
+    "write_seconds": 5.09,
+    "records_per_second": 19639,
+    "batch_size": 5000,
+    "tracemalloc_peak_mib": 11.5,
+    "first_connection_query_ms": 22.21,
+    "warm_mean_query_ms": 21.34,
+    "first_page_ms": 27.87,
+    "offset_90000_ms": 122.99,
+    "sample_cancel_ms": 37.03,
+    "limits": "Synthetic records; OS cache not cleared; tracemalloc is Python allocations, not process RSS; no full-disk speed claim."
+  },
+  "original_handoff": {
+    "file_count": 20,
+    "matching": 19,
+    "mismatched": [
+      "search_app/discovery/scan.py"
+    ],
+    "snapshot": ".tmp/discovery-review/original/",
+    "note": "Initial scan.py bytes/hash differed from supplied handoff; provenance not inferred. Original handoff retained as historical evidence."
+  },
+  "protected": {
+    "search_app/qt_frontend/acceptance.py": {
+      "sha256": "60637C8C5175E08164D94ED4A6C23565EC7761A5C238E1C3253267DC6D7D1DDA",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/backend.py": {
+      "sha256": "BFDDED4893813BC8CDD8E7D25CBCC71666E72A9F92132BE563C133FE2A514299",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/display.py": {
+      "sha256": "D40831C692170FE23BFAE598DE6B65D8DFA9EE73D693D5AC6219CEA5BDB68E3C",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/document_open.py": {
+      "sha256": "EF2B0FA336C78FA0CF92C83A571ACDEC7C184FEC82809C20B8CA1D8D33B2E4CD",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/experience_acceptance.py": {
+      "sha256": "BEAFAD86A3EFECB5F46BB4893F899233247201A4205823EB47887C0674C57090",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/import_dialog.py": {
+      "sha256": "EAB402D99276BE462C5133734546BC55B08C7185CBE58955223C5A2FCCAB38A9",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/import_service.py": {
+      "sha256": "8C541CA45C877E4713DA13686D2A54D8C46AA7218315FD07C867CB38389761D7",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/jobs.py": {
+      "sha256": "895C88D60185F379220649DAD048CC7055E8F67D89FD8BCB07D2C6852B1FC8D1",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/legacy_bridge.py": {
+      "sha256": "B58470C93FB44008B6C29EA522E46CBEF372351742C3332987A687B569026695",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/maintenance.py": {
+      "sha256": "9F977C1EFFC53B3913A20D4DBA62184030FF8F670EB35C056BBAC546EF968869",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/minimal_acceptance.py": {
+      "sha256": "FFBE6322439DAF4153BA283158BF87A10324DB40F855A45D96C8628BF7CB217E",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/minimal_ui.py": {
+      "sha256": "31B30A19053A03DCFF8EA29496E2CDEF8E78850877CB7423924BD49712B6D4E2",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/native.py": {
+      "sha256": "60D99CB7E4F0172DA04AA925FC084B39484BF68FE4E74FA2CADAC49C62020F68",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/parity.py": {
+      "sha256": "05ECDD390A4EBD63274A1D8208979E85DED14C9060DBAEC6B9E389391286D55E",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/pdf_reader.py": {
+      "sha256": "ED5B01CB9EB6BF0C406121967BD7EA5ADBB3983CBED8F7B4CDB65FC713F29838",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/qt_display.py": {
+      "sha256": "842619CA3BC66732A7D574B5171F5E178D617CDD22E77CFF9987DF986BA38034",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/result_snippets.py": {
+      "sha256": "29DE456AF3B282A3CF510A14FCB8AEF9BA6ECD250F79E0FF9B4167A6960409BD",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/search_experience.py": {
+      "sha256": "1F37AC3E8CF13EAFEB08E8CA279E205FDED70F582973577614ADEFD553DA3C00",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/tk_display.py": {
+      "sha256": "50533A162C5CA83156963A4329FC07A3DD396D7B281F9491379CBDD803FA95F6",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/tools.py": {
+      "sha256": "EDCD934525EDAC62E1D74E7FD7FEA6CE7902ACD6B440451A23ADBC97C2A1DA26",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/widgets.py": {
+      "sha256": "D1D97F2990704D3DDF347BC15446DE433D1996966B944AA14E340E57C67BA1C4",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/window.py": {
+      "sha256": "97A019CA21840304B3138DD063F766E94B6F70E4B7486239A2444D0418CCC2B4",
+      "unchanged": true
+    },
+    "search_app/qt_frontend/__init__.py": {
+      "sha256": "414B18B94E99263A2DB7EEC3EEEFCD72ABFB06F6FD32AF56278DC0B1CD7A52E9",
+      "unchanged": true
+    },
+    "search_app/qt_main.py": {
+      "sha256": "0D6AB773FA36D7504C852839610D42A24CEA7DCC31626028B3665949F6DF3A77",
+      "unchanged": true
+    },
+    "search_app/main.py": {
+      "sha256": "A7732E550222EDD457B9F1F8D41002571773452F103E178727BB260365E38EEF",
+      "unchanged": true
+    },
+    "index.db": {
+      "sha256": "133A2F3D415CF962904FE4568416B126A6159B7B1CB693C9C3113CBBFF366A26",
+      "unchanged": true
+    },
+    "config.qt.json": {
+      "sha256": "B8F85AA507B10416A648DD22B2B7B011EA165153415A6F3B4B81F9FF900242C4",
+      "unchanged": true
+    },
+    "config.json": {
+      "sha256": "7F57A524D55EAE28D7594E60F93CC15DB64ED2F5BA3165C325CE5503DCAB7633",
+      "unchanged": true
+    },
+    "镜仔搜索.exe": {
+      "sha256": "782623571417574736DA5C561792B00B30892C775ACAC3905C155DFF75EB0E64",
+      "unchanged": true
+    },
+    "镜仔搜索新版/镜仔搜索新版.exe": {
+      "sha256": "D87A71D350A02DB87CC9CC069B1D272E3A34030B4EFA3997F3404B0B6834EB39",
+      "unchanged": true
+    }
+  },
+  "evidence": [
+    ".tmp/discovery-review/baseline.json",
+    ".tmp/discovery-review/baseline-tests.log",
+    ".tmp/discovery-review/verified-tests.log",
+    ".tmp/discovery-review/verified-demo.log",
+    ".tmp/discovery-review/verified-benchmark.log",
+    ".tmp/discovery-review/native-probe-final.json",
+    ".tmp/discovery-review/extra-checks.json",
+    ".tmp/discovery-review/protected-check.json"
+  ],
+  "remaining": [
+    "Production native full-volume initial catalog builder; scan_source still performs generic initial scan.",
+    "Unresolved native parent paths, USN V4 consumption, real journal rebuild and drive removal/reconnect end-to-end validation.",
+    "Whole-PC scale, overlapping sources, multi-source scheduling and production background lifecycle integration.",
+    "Frontend exploration/answer modes, content/OCR and multimodal indexing integration."
+  ],
+  "simulation_only": [
+    "USN malformed/unknown record boundaries",
+    "Cross-chunk path reconstruction and injected journal gaps",
+    "Transactional rollback fault paths"
+  ],
+  "no_new_dependencies": true,
+  "production_release_changed": false
+}

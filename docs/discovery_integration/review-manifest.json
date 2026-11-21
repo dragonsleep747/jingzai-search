@@ -1,0 +1,665 @@
+{
+  "date": "2026-10-29",
+  "timezone": "Asia/Hong_Kong",
+  "status": "reviewed-fixed-and-published-locally",
+  "module_version": "0.3.0",
+  "schema_version": 2,
+  "tests": {
+    "baseline_total": 305,
+    "current_total": 339,
+    "new_review_tests": 34,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 44.322,
+    "log": ".tmp/integration-review/review-final-tests.log"
+  },
+  "native_desktop": {
+    "checks": 151,
+    "cycles": 20,
+    "unoccluded_frames": 189,
+    "max_black_fraction": 0.0,
+    "errors": [],
+    "tested_exe_sha256": "52D818707ECCEF8F82D89F3F41C6750DD112C0433474AE3B556C8A9E807CF1AD",
+    "log": ".tmp/integration-review/release-native-window/result.json",
+    "limits": "Sampled unoccluded reader regions on one 125% DPI monitor; not all pixels, GPUs or monitor setups."
+  },
+  "native_real": {
+    "snapshot": {
+      "source_id": "vol:77af125041f725e406e250d1",
+      "provider": "usn",
+      "state": "complete",
+      "found": 58187,
+      "dirs": 4745,
+      "failed": 0,
+      "written": 58168,
+      "excluded": 20,
+      "stopped": false,
+      "generation": 4,
+      "reason": null,
+      "elapsed_ms": 8496.539599989774,
+      "journal_id": 134328034074976684,
+      "next_usn": 29755936
+    },
+    "entries": 58168,
+    "replay": {
+      "source_id": "vol:77af125041f725e406e250d1",
+      "provider": "usn",
+      "applied": 0,
+      "failed": 0,
+      "cursor": "29755936",
+      "needs_rescan": false,
+      "stopped": false,
+      "more_pending": false
+    }
+  },
+  "packaged_native": {
+    "source_id": "vol:77af125041f725e406e250d1",
+    "state": "complete",
+    "provider": "usn",
+    "failed_count": 0,
+    "needs_rescan": 0,
+    "discovered_count": 58168,
+    "checkpoint": {
+      "provider": "usn",
+      "cursor": "29755936",
+      "journal_id": "134328034074976684"
+    }
+  },
+  "native_before_optimization": {
+    "snapshot": {
+      "source_id": "vol:77af125041f725e406e250d1",
+      "provider": "usn",
+      "state": "complete",
+      "found": 58187,
+      "dirs": 4745,
+      "failed": 0,
+      "written": 58168,
+      "excluded": 20,
+      "stopped": false,
+      "generation": 3,
+      "reason": null,
+      "elapsed_ms": 80360.48740000115,
+      "journal_id": 134328034074976684,
+      "next_usn": 29755936
+    },
+    "entries": 58168,
+    "replay": {
+      "source_id": "vol:77af125041f725e406e250d1",
+      "provider": "usn",
+      "applied": 0,
+      "failed": 0,
+      "cursor": "29755936",
+      "needs_rescan": false,
+      "stopped": false,
+      "more_pending": false
+    }
+  },
+  "native_cancellation": [
+    {
+      "root": "F:\\",
+      "native_readable": true,
+      "snapshot": {
+        "source_id": "vol:77af125041f725e406e250d1",
+        "provider": "usn",
+        "state": "partial",
+        "found": 58187,
+        "dirs": 4745,
+        "failed": 0,
+        "written": 27000,
+        "stopped": true,
+        "generation": 1,
+        "reason": "native snapshot cancelled",
+        "elapsed_ms": 40036.31799999857,
+        "journal_id": 134328034074976684,
+        "next_usn": 29755936
+      },
+      "entries": 27000
+    },
+    {
+      "root": "C:\\",
+      "native_readable": false
+    },
+    {
+      "root": "E:\\",
+      "native_readable": false
+    },
+    {
+      "root": "D:\\",
+      "native_readable": false
+    }
+  ],
+  "compatibility": {
+    "tools": 15,
+    "all_window_and_dpi_checks_passed": true,
+    "log": ".tmp/integration-review/compatibility-final/result.json",
+    "limits": "Window/callback/DPI checks; not actual external model, internet or mobile operation."
+  },
+  "single_instance": {
+    "forward_exit": 0,
+    "before_windows": 1,
+    "after_windows": 1
+  },
+  "external_open": {
+    "candidate_action_invoked": true,
+    "external_execution_receipt": true,
+    "fixture_only": true
+  },
+  "explorer_location": {
+    "candidate_location_action_invoked": true,
+    "explorer_opened_expected_folder": true,
+    "test_window_cleaned": true
+  },
+  "ranges": {
+    "candidate_range_manager_opened": true,
+    "accessible_cells": 30,
+    "visible_range_rows": 5,
+    "method": "Count first-column root-path cells, not all six cells per row"
+  },
+  "exit": {
+    "exit_action_invoked": true,
+    "process_exited": true
+  },
+  "action_functions_unchanged_since_actual_candidate_ui_test": {
+    "open_discovery_original": true,
+    "open_discovery_location": true,
+    "open_range_manager": true
+  },
+  "synthetic_benchmark": {
+    "records": 100000,
+    "database_mib": 66.2,
+    "write_seconds": 5.08,
+    "records_per_second": 19684,
+    "tracemalloc_peak_mib": 11.5,
+    "first_connection_query_ms": 16.42,
+    "warm_mean_query_ms": 18.13,
+    "first_page_ms": 29.58,
+    "offset_90000_ms": 110.66,
+    "cancel_ms": 50.04,
+    "log": ".tmp/integration-review/benchmark-utf8.log",
+    "limits": "Synthetic records; OS cache not cleared; Python allocations are not process working set."
+  },
+  "library_parity": [
+    {
+      "query": "安全",
+      "equal": true,
+      "files": 161,
+      "hits": 19182
+    },
+    {
+      "query": "培训",
+      "equal": true,
+      "files": 107,
+      "hits": 1308
+    },
+    {
+      "query": "安全 -培训",
+      "equal": true,
+      "files": 161,
+      "hits": 18506
+    },
+    {
+      "query": "名称:制度",
+      "equal": true,
+      "files": 13,
+      "hits": 13
+    }
+  ],
+  "library_documents": 193,
+  "local_model_probe": {
+    "local_service_ready": false,
+    "error_type": "URLError"
+  },
+  "published": {
+    "path": "镜仔搜索新版/镜仔搜索新版.exe",
+    "sha256": "52D818707ECCEF8F82D89F3F41C6750DD112C0433474AE3B556C8A9E807CF1AD",
+    "bytes": 18658677,
+    "candidate": "dist/discovery-candidate/镜仔搜索新版/镜仔搜索新版.exe",
+    "build_manifest": "镜仔搜索新版/build-manifest.json",
+    "rollback_backup": ".\\程序备份\\2026-10-29-discovery-0.3-7a6fcbaf",
+    "rollback_exe_sha256": "D87A71D350A02DB87CC9CC069B1D272E3A34030B4EFA3997F3404B0B6834EB39",
+    "preserved_extras": [
+      "验收资料"
+    ],
+    "user_guide": "镜仔搜索新版/新版使用说明.md"
+  },
+  "protected": {
+    "index.db": {
+      "sha256": "133A2F3D415CF962904FE4568416B126A6159B7B1CB693C9C3113CBBFF366A26",
+      "unchanged": true,
+      "expected_program_update": false
+    },
+    "config.json": {
+      "sha256": "7F57A524D55EAE28D7594E60F93CC15DB64ED2F5BA3165C325CE5503DCAB7633",
+      "unchanged": true,
+      "expected_program_update": false
+    },
+    "config.qt.json": {
+      "sha256": "B8F85AA507B10416A648DD22B2B7B011EA165153415A6F3B4B81F9FF900242C4",
+      "unchanged": true,
+      "expected_program_update": false
+    },
+    "镜仔搜索.exe": {
+      "sha256": "782623571417574736DA5C561792B00B30892C775ACAC3905C155DFF75EB0E64",
+      "unchanged": true,
+      "expected_program_update": false
+    },
+    "镜仔搜索新版/镜仔搜索新版.exe": {
+      "sha256": "52D818707ECCEF8F82D89F3F41C6750DD112C0433474AE3B556C8A9E807CF1AD",
+      "unchanged": false,
+      "expected_program_update": true
+    }
+  },
+  "files": [
+    {
+      "path": "docs/discovery_integration/FUNCTION_MAP.md",
+      "bytes": 5809,
+      "sha256": "229403301A3002CC710282D8308D121C607828C6BAC3F9539A9C9CC892ED5E3B",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "docs/discovery_integration/HANDOFF.md",
+      "bytes": 5383,
+      "sha256": "845B599EB39376212732BAA489DCE4C4111B5D8946F05A623A65D0604796376C",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "docs/discovery_integration/IMPLEMENTATION.md",
+      "bytes": 8823,
+      "sha256": "B02DC7C9BB84A55FD839B63BA3B272002410899BF01AC5641FC00BC1FE62CFCB",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "docs/discovery_integration/MULTIMODAL_NEXT.md",
+      "bytes": 5412,
+      "sha256": "3408273925BBEF71256F6631CFC1CF3CC38B3BFC4972CD8FF6DB9332AAB75D2D",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "docs/discovery_integration/REVIEW.md",
+      "bytes": 10221,
+      "sha256": "900ADC67728FB2FD41FDE5483CC77573E709D2F9AA0EE1FAF7B598AD5C39F5AB",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "docs/discovery_integration/USER_GUIDE_0_3.md",
+      "bytes": 2738,
+      "sha256": "8A5BB9E19A8BCA216051B770F507ED33F64845BE9319E00A5C402C41F53619D5",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "docs/discovery_integration/VALIDATION.md",
+      "bytes": 6675,
+      "sha256": "F365F20B4AB714FAF3015EBAD0097296485D8F54E0ECED781CE5BA924FC46B6D",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/discovery/__init__.py",
+      "bytes": 1068,
+      "sha256": "45C8B74FF2A102252A4FDBD16E4CA95E7FE41C5374FF9E818C7BFB2FE8ECAC4A",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/discovery/catalog.py",
+      "bytes": 36605,
+      "sha256": "DB5391EE0102A58E81A4BCF0EAADB839499AE0FD59DF84EE207B7AFD2414F219",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/discovery/errors.py",
+      "bytes": 925,
+      "sha256": "2304E07A7F127BFDE70D1352DB555EC47014973917D5A737B5D2F1F35987CD88",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/discovery/filters.py",
+      "bytes": 5144,
+      "sha256": "8D628D912E9FC0648BE770AEBBF9217D1B15D4C35FED3C71C6947397350C5DD6",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/discovery/links.py",
+      "bytes": 3351,
+      "sha256": "C2FE4EABB692B4C70440D2941B8F68ABC0F87B7E73DBAE7896CE4624EF2B331F",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "search_app/discovery/model.py",
+      "bytes": 4457,
+      "sha256": "913799E211D16F9F56E1680D5B8BBE51D6692C5FA7A5F3C798AD822AA1E52F30",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/discovery/native_scan.py",
+      "bytes": 13920,
+      "sha256": "1251D632CA752FDA77DF66344C36A6147E7385E1A2FBB805254449F94B616C63",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/discovery/probe.py",
+      "bytes": 4558,
+      "sha256": "AEBFBC221BDCEB61677CC7B335CF98FC6B6A6CAAC84EE10940BD6498FBB4B9A7",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/discovery/provider.py",
+      "bytes": 13538,
+      "sha256": "D83783C52F675E0670B70EB41DEB444E5CD54DA29206FC39FA476EF12C7456E8",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/discovery/scan.py",
+      "bytes": 8042,
+      "sha256": "67598DAC28F22C32789D5B2442C9544D069D56BFADDC3FC9D511BEBD8D906FA8",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/discovery/scheduler.py",
+      "bytes": 13097,
+      "sha256": "37C48F6ABF3E843F01D5FD9BBC39C9D2C4B3F2AC8094CF05767F6D967A12AE1B",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/discovery/schema.py",
+      "bytes": 6369,
+      "sha256": "9A5BF307CFD8472424EF77D85CCBAACA0299C8FA88BBEDD2B34E889A1F992697",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/discovery/sync.py",
+      "bytes": 6266,
+      "sha256": "CB480FFCB7ACD1CFE60623B845F41AC57E36A9936997DBA27B5DBDD2E951D24F",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/discovery/usn.py",
+      "bytes": 11649,
+      "sha256": "940E70F9422FB3A4173995FE68A15AF53D85DF2142CB0663FA0D688F4888BF31",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/discovery/watch.py",
+      "bytes": 7346,
+      "sha256": "BC3EDE906BC72912209A5004B31711FD15E6938354D68B222ECE37C37E8178C7",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/__init__.py",
+      "bytes": 95,
+      "sha256": "414B18B94E99263A2DB7EEC3EEEFCD72ABFB06F6FD32AF56278DC0B1CD7A52E9",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/acceptance.py",
+      "bytes": 12617,
+      "sha256": "60637C8C5175E08164D94ED4A6C23565EC7761A5C238E1C3253267DC6D7D1DDA",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/backend.py",
+      "bytes": 17963,
+      "sha256": "CF445161A04540BB1D449B6F24779B2DCB7DA8FD740C0FBBB30BA867A261F67F",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/discovery_ui.py",
+      "bytes": 40881,
+      "sha256": "8B594712BD0AA3FE07365A17243A6E084EF58174B94F3468200DB667A5A54654",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/display.py",
+      "bytes": 2225,
+      "sha256": "D40831C692170FE23BFAE598DE6B65D8DFA9EE73D693D5AC6219CEA5BDB68E3C",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/document_open.py",
+      "bytes": 5695,
+      "sha256": "EF2B0FA336C78FA0CF92C83A571ACDEC7C184FEC82809C20B8CA1D8D33B2E4CD",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/experience_acceptance.py",
+      "bytes": 9304,
+      "sha256": "BEAFAD86A3EFECB5F46BB4893F899233247201A4205823EB47887C0674C57090",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/file_preview.py",
+      "bytes": 2603,
+      "sha256": "58807EF9106FA2C888B4298192FE11E46BF7329B5F2962134739D2F43625E368",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "search_app/qt_frontend/import_dialog.py",
+      "bytes": 14609,
+      "sha256": "EAB402D99276BE462C5133734546BC55B08C7185CBE58955223C5A2FCCAB38A9",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/import_service.py",
+      "bytes": 11045,
+      "sha256": "8C541CA45C877E4713DA13686D2A54D8C46AA7218315FD07C867CB38389761D7",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/jobs.py",
+      "bytes": 5773,
+      "sha256": "4BDF54553193C0A7642F2E632B80E0E1450F67B94812157CBE6F52132685A39F",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/legacy_bridge.py",
+      "bytes": 11760,
+      "sha256": "B58470C93FB44008B6C29EA522E46CBEF372351742C3332987A687B569026695",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/maintenance.py",
+      "bytes": 6503,
+      "sha256": "9F977C1EFFC53B3913A20D4DBA62184030FF8F670EB35C056BBAC546EF968869",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/minimal_acceptance.py",
+      "bytes": 4149,
+      "sha256": "411749355DB6E68DFA1D299C9B6FFFA26AFC5011DFE2DFE1B73C49FBD89C51D6",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/minimal_ui.py",
+      "bytes": 27144,
+      "sha256": "6A97FAE2E0524AF0C32419615B5C2654F5B53EEBF73A1351F734341F3E314690",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/native.py",
+      "bytes": 2832,
+      "sha256": "60D99CB7E4F0172DA04AA925FC084B39484BF68FE4E74FA2CADAC49C62020F68",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/parity.py",
+      "bytes": 47806,
+      "sha256": "E2B357584540427401EEA010AFA4C008976CF942AC7283A9265DC60F789DA41D",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/pdf_reader.py",
+      "bytes": 13614,
+      "sha256": "ED5B01CB9EB6BF0C406121967BD7EA5ADBB3983CBED8F7B4CDB65FC713F29838",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/qt_display.py",
+      "bytes": 2540,
+      "sha256": "842619CA3BC66732A7D574B5171F5E178D617CDD22E77CFF9987DF986BA38034",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/result_snippets.py",
+      "bytes": 7923,
+      "sha256": "29DE456AF3B282A3CF510A14FCB8AEF9BA6ECD250F79E0FF9B4167A6960409BD",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/search_experience.py",
+      "bytes": 11449,
+      "sha256": "782AC19AD7CBFDCACB5022600D85F351443DA8D81E4C44B7DDA55FBC8BDAB6DF",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/tk_display.py",
+      "bytes": 9306,
+      "sha256": "50533A162C5CA83156963A4329FC07A3DD396D7B281F9491379CBDD803FA95F6",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/tools.py",
+      "bytes": 53675,
+      "sha256": "8DABA569DBE64FB61DFFDB7AFEF7EF52827ED9EA065EF20629B5EDABBFB0D132",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_frontend/widgets.py",
+      "bytes": 11646,
+      "sha256": "D1D97F2990704D3DDF347BC15446DE433D1996966B944AA14E340E57C67BA1C4",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/qt_frontend/window.py",
+      "bytes": 40735,
+      "sha256": "CD8465ECBEAF17A8443FB7FCA1781DEF18C6AD8B98FD4F0D1AB42247EF658285",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/qt_main.py",
+      "bytes": 7278,
+      "sha256": "0D6AB773FA36D7504C852839610D42A24CEA7DCC31626028B3665949F6DF3A77",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "search_app/tests/test_discovery_catalog.py",
+      "bytes": 7231,
+      "sha256": "048E9CE484D27951A73393F349D5CBA8FAE19891806DC028FDE2B8B8072E1CE1",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/tests/test_discovery_filters.py",
+      "bytes": 2544,
+      "sha256": "D37559D991B32B61AD1A1E16977DF41166B7420F7511E7D44586BED10DDD92CA",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/tests/test_discovery_integration_review.py",
+      "bytes": 26061,
+      "sha256": "80F161615A32CC4ABA21BD30CE9E3BB9C68555AC76BA8C3482FB51A7AB53ECA8",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "search_app/tests/test_discovery_native.py",
+      "bytes": 6187,
+      "sha256": "7EF2F9E063FFA3CF3F22E4BD73F3EE43461F470E2664D135F042F545710BF1C1",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/tests/test_discovery_review.py",
+      "bytes": 18028,
+      "sha256": "E34D7A18E318DB568D1B87C6375091D4D04586B7B81A7B4945A492CA794DC803",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/tests/test_discovery_scan.py",
+      "bytes": 4705,
+      "sha256": "CC07EA2DC6A5FCB06F4103810FA5B5E8BB5B0BDDC0D753CADA0F7CB52F72E519",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/tests/test_discovery_scheduler.py",
+      "bytes": 5485,
+      "sha256": "1ED2ED8E5E006BC1859BFE72957D0A341E04A213381AB692EF3D104AEADC3CBE",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/tests/test_discovery_sync.py",
+      "bytes": 3523,
+      "sha256": "83FA7F00F94B96F04563D2A09AC66530E1675BB35654AEEE50E5D055127BBBE3",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/tests/test_discovery_ui.py",
+      "bytes": 4950,
+      "sha256": "444E54C9B0E0477D68BB19616F23E59BFB7F2D96016A561B2E0FD970CC5394B1",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/tests/test_discovery_usn.py",
+      "bytes": 3611,
+      "sha256": "2A4E0AA560E30F13CEC7288E392163E770E687732ECA33B9889C90AF0650B970",
+      "status_vs_dsh_snapshot": "unchanged"
+    },
+    {
+      "path": "search_app/tests/test_qt_frontend.py",
+      "bytes": 28444,
+      "sha256": "56400D2AB8AA4F37AB1D5E9B68249FAE021ECA82BBA8BE855AA2E9629E2A118F",
+      "status_vs_dsh_snapshot": "modified"
+    },
+    {
+      "path": "search_app/镜仔搜索新版.spec",
+      "bytes": 2027,
+      "sha256": "B8BD179107D07AA383875C2A8BD5460F32CF31D9051F55CC095AE7542C2672F6",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "tools/build_candidate.py",
+      "bytes": 3230,
+      "sha256": "7EB631161B5CCCF68521057ED1BFBB6C687810480B2FE341D0567759ED9FBF47",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "tools/discovery_benchmark.py",
+      "bytes": 7521,
+      "sha256": "BC89513AF0C0538859E6E74B3C2C4C5F92621F26389CD6BAB92AEFABDEAB6234",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "tools/discovery_demo.py",
+      "bytes": 3805,
+      "sha256": "47DE0DA3B9AC01DF4C60C4744F9D49F1DF2F05DE66E42B47AB9D18F8C7809FAE",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "tools/discovery_probe.py",
+      "bytes": 1851,
+      "sha256": "CBC3B28566F00A5CA1369B05F31AE3B05D8C3E15E4C0C167CD39578E8DAED28F",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "tools/run_tests_logged.py",
+      "bytes": 982,
+      "sha256": "7B138A0958299D82DD9CE3D1B6FC154FAF43B3F0EC60B680D51B614D72A81B29",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    },
+    {
+      "path": "tools/verify_qt_release.py",
+      "bytes": 2357,
+      "sha256": "66BC14CE8F7E7D317E4B47DC0C18ED2A1115990444B0D6008C2EC3CBA617DCA5",
+      "status_vs_dsh_snapshot": "added_or_not_snapshotted"
+    }
+  ],
+  "remaining": [
+    "Natural-language visual retrieval and unified content/OCR/image/video/audio indexing are not implemented.",
+    "Actual Ollama generation, internet services and physical phone pairing are not validated.",
+    "C/D/E native access unavailable in current privileges; generic fallback remains.",
+    "V4 consumption and real journal rebuild/drive removal recovery require further work; unknown records fail closed.",
+    "Other real DPI settings, GPUs and multiple monitors are not validated."
+  ],
+  "dependencies_added": false,
+  "git_committed": false,
+  "reproduce": {
+    "tests": ".venv-qt\\Scripts\\python.exe tools\\run_tests_logged.py .tmp\\integration-review\\rerun-tests.log",
+    "native_window": "镜仔搜索新版\\镜仔搜索新版.exe --data-dir <fresh isolated directory> --verify-native <output directory>",
+    "protected_note": "Do not point verification flags at the real user data directory."
+  }
+}

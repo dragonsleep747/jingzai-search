@@ -1,0 +1,8 @@
+
+
+# 导入库文件（不放版本控制）
+library/*
+!library/.gitkeep
+index.db*
+config.json
+__pycache__/

@@ -1,0 +1,73 @@
+{
+  "task": "DSH_DISCOVERY_PREWORK",
+  "status": "prework-complete",
+  "generated_at": "2026-10-28T18:45:00+08:00",
+  "schema_version": 1,
+  "api_version": "0.1.0",
+  "files": [
+    {"path": "search_app/discovery/__init__.py", "sha256": "0214E1715E8837D1751D365B74444DD334CD9148D9E0FF120F268C4CEAD6EECA", "bytes": 1068},
+    {"path": "search_app/discovery/errors.py", "sha256": "17788B409C10608FF2E7037ACDAF77471D4DD89323AF6A7D993CC4F065D8AA56", "bytes": 779},
+    {"path": "search_app/discovery/model.py", "sha256": "7BDA7A51CF27B4CFCE9818803E771490FB2A2878ACB95CB56425DAADD7ADE2A5", "bytes": 4371},
+    {"path": "search_app/discovery/filters.py", "sha256": "3D03929F4836278ECA34BE7F70A6421EF6E1A2CD520F85F2CC5D5D5B6079D87F", "bytes": 4686},
+    {"path": "search_app/discovery/schema.py", "sha256": "FEBB0E3976302DE6C42F2C6017F0F9BB73E1F61F1C04F5760F500155A25359B7", "bytes": 4420},
+    {"path": "search_app/discovery/catalog.py", "sha256": "0EAAC7ED90DDC935AA1FB42806B772F18DDC88C0BE66E1B0F0EB2B4A7638BFB1", "bytes": 24815},
+    {"path": "search_app/discovery/scan.py", "sha256": "75D2A4B8F699FE01063629D48E1BA48B957F6D6999512FD641A2903B7A7B58F1", "bytes": 8152},
+    {"path": "search_app/discovery/sync.py", "sha256": "5F99CB79AC288E785AFFAF9352A7715B3AA90CB8F285CD2A050D2718EF509DDF", "bytes": 5322},
+    {"path": "search_app/discovery/usn.py", "sha256": "29CCC75FC4E27FAC27F5E407837732B4C86EDE72DAD982CE6D8072A30C7FE07A", "bytes": 11095},
+    {"path": "search_app/discovery/probe.py", "sha256": "0F35F18C150A691590BA1F4809695BC39E05C0643578D007C6C0FEAAFD67A6FF", "bytes": 3742},
+    {"path": "search_app/discovery/provider.py", "sha256": "410A7D9F01F79AFABC6E6D02552545912E0F747EDA6301DF0D44F2520277529A", "bytes": 11936},
+    {"path": "search_app/discovery/watch.py", "sha256": "C02A13B85A13DE8DAC64D0F280E0917643AB4A69D1BE22823188A4127D2FDDE6", "bytes": 4908},
+    {"path": "search_app/tests/test_discovery_filters.py", "sha256": "D37559D991B32B61AD1A1E16977DF41166B7420F7511E7D44586BED10DDD92CA", "bytes": 2544},
+    {"path": "search_app/tests/test_discovery_catalog.py", "sha256": "048E9CE484D27951A73393F349D5CBA8FAE19891806DC028FDE2B8B8072E1CE1", "bytes": 7231},
+    {"path": "search_app/tests/test_discovery_scan.py", "sha256": "CC07EA2DC6A5FCB06F4103810FA5B5E8BB5B0BDDC0D753CADA0F7CB52F72E519", "bytes": 4705},
+    {"path": "search_app/tests/test_discovery_sync.py", "sha256": "83FA7F00F94B96F04563D2A09AC66530E1675BB35654AEEE50E5D055127BBBE3", "bytes": 3523},
+    {"path": "search_app/tests/test_discovery_usn.py", "sha256": "2A4E0AA560E30F13CEC7288E392163E770E687732ECA33B9889C90AF0650B970", "bytes": 3611},
+    {"path": "tools/discovery_probe.py", "sha256": "2DE54893E0312309B2A8580EFE35316616C6C2B5D60B57038AFFCCA08B1FEA74", "bytes": 1809},
+    {"path": "tools/discovery_demo.py", "sha256": "A7B222369E68426E3BC9737F029430A561F43608347E38B20E3CD0A3298BFB28", "bytes": 3623},
+    {"path": "tools/discovery_benchmark.py", "sha256": "88E2F9EE650E736B9C846B28DBCC9AAE516887297D793820F5326487A6E56E5E", "bytes": 7197}
+  ],
+  "test_commands": [
+    "python search_app/tests/run_tests.py test_discovery_filters",
+    "python search_app/tests/run_tests.py test_discovery_catalog",
+    "python search_app/tests/run_tests.py test_discovery_scan",
+    "python search_app/tests/run_tests.py test_discovery_sync",
+    "python search_app/tests/run_tests.py test_discovery_usn"
+  ],
+  "test_results": {
+    "discovery_total": 40,
+    "discovery_passed": 40,
+    "legacy_regression_passed": 9,
+    "legacy_regression_skipped_qt_no_pyside6": true
+  },
+  "real_vs_simulated": {
+    "real": [
+      "generic directory scan/search/rename on sample dir",
+      "junction no-loop (mklink /J)",
+      "hardlink two paths (os.link)",
+      "USN QUERY on F: (journal readable)",
+      "USN READ on F: (557 V3 records parsed, cursor advanced)",
+      "benchmark cancel responsiveness (real temp dir scan)"
+    ],
+    "simulated": [
+      "USN V2/V3 record parsing edge cases (synthetic bytes)",
+      "FRN->path rebuild & USN record->event conversion (synthetic records)",
+      "watchdog event injection (synthetic calls)",
+      "journal expiry / journal-id change (code path only)"
+    ],
+    "not_done": [
+      "full-volume content/OCR/multimodal analysis",
+      "FSCTL_ENUM_USN_DATA full catalog build (F: returns ERROR_HANDLE_EOF)",
+      "USN V4 range-tracking extents consumption",
+      "real volume-offline / journal-expired end-to-end test",
+      "long path (>260) dedicated test"
+    ]
+  },
+  "outputs": {
+    "catalog_dir": ".tmp/discovery-prework/",
+    "probe": ".tmp/discovery-prework/probe-output.txt",
+    "demo": ".tmp/discovery-prework/demo-output.txt",
+    "benchmark": ".tmp/discovery-prework/bench-output.txt",
+    "usn_read": ".tmp/discovery-prework/usn-read-output.txt",
+    "usn_enum": ".tmp/discovery-prework/usn-enum-output.txt"
+  }
+}

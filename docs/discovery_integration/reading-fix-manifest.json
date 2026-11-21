@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-29",
+  "timezone": "Asia/Hong_Kong",
+  "version": "0.3.1",
+  "schema_version": 2,
+  "status": "published-locally",
+  "tests": {
+    "baseline_total": 339,
+    "new_interaction_tests": 11,
+    "total": 350,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 55.658,
+    "log": ".tmp/reading-ui-fix/verified-tests.log"
+  },
+  "native_window": {
+    "checks": 151,
+    "cycles": 20,
+    "frames": 382,
+    "worst_black_fraction": 0.0,
+    "errors": [],
+    "log": ".tmp/reading-ui-fix/native-window/result.json"
+  },
+  "layout": {
+    "viewport_width": 301,
+    "title_width": 253,
+    "count_width": 48,
+    "snippet_width": 277,
+    "files": 22,
+    "snippet_spanned": true
+  },
+  "screenshots": [
+    ".tmp/reading-ui-fix/expanded.png",
+    ".tmp/reading-ui-fix/collapsed.png"
+  ],
+  "published": {
+    "published": true,
+    "version": "0.3.1",
+    "exe_sha256": "1DF5FE72E3CBEBD9684C21856BA9C348C8EC275425133F5ED446AB0FD9479868",
+    "backup": ".\\程序备份\\2026-10-29-before-reading-0.3.1-779d90c2",
+    "backup_sha256": "52D818707ECCEF8F82D89F3F41C6750DD112C0433474AE3B556C8A9E807CF1AD"
+  },
+  "protected": {
+    "index.db": {
+      "sha256": "133A2F3D415CF962904FE4568416B126A6159B7B1CB693C9C3113CBBFF366A26",
+      "unchanged": true,
+      "expected_program_update": false
+    },
+    "config.json": {
+      "sha256": "7F57A524D55EAE28D7594E60F93CC15DB64ED2F5BA3165C325CE5503DCAB7633",
+      "unchanged": true,
+      "expected_program_update": false
+    },
+    "config.qt.json": {
+      "sha256": "0C3F9247E39625590213B4054C25B48894C25B3A3DAA3D7EEF45895FC6EFDC81",
+      "unchanged": true,
+      "expected_program_update": false
+    },
+    "镜仔搜索.exe": {
+      "sha256": "782623571417574736DA5C561792B00B30892C775ACAC3905C155DFF75EB0E64",
+      "unchanged": true,
+      "expected_program_update": false
+    },
+    "镜仔搜索新版/镜仔搜索新版.exe": {
+      "sha256": "1DF5FE72E3CBEBD9684C21856BA9C348C8EC275425133F5ED446AB0FD9479868",
+      "unchanged": false,
+      "expected_program_update": true
+    }
+  },
+  "library_parity": [
+    {
+      "query": "安全",
+      "equal": true,
+      "files": 161,
+      "hits": 19182
+    },
+    {
+      "query": "培训",
+      "equal": true,
+      "files": 107,
+      "hits": 1308
+    },
+    {
+      "query": "安全 -培训",
+      "equal": true,
+      "files": 161,
+      "hits": 18506
+    },
+    {
+      "query": "名称:制度",
+      "equal": true,
+      "files": 13,
+      "hits": 13
+    }
+  ],
+  "files": [
+    {
+      "path": "search_app/qt_frontend/result_snippets.py",
+      "bytes": 9716,
+      "sha256": "15A46B97A861653531F23F77CE17CC65F17486278F351BA712AF79CA8C26474A"
+    },
+    {
+      "path": "search_app/qt_frontend/discovery_ui.py",
+      "bytes": 41499,
+      "sha256": "C22247C745B725D64F1EAB6899E93E1FEBC6B8CFCC6DC16768E44887D319FF44"
+    },
+    {
+      "path": "search_app/qt_frontend/parity.py",
+      "bytes": 49773,
+      "sha256": "560A5C6629454E7828159BA82AAD6943423EC87A178348F2E12EF5006255A01A"
+    },
+    {
+      "path": "search_app/qt_frontend/backend.py",
+      "bytes": 18635,
+      "sha256": "1923D6FBE54D4FD18352497CD4076A37142D75E9615D57BC5551937D513FCC99"
+    },
+    {
+      "path": "search_app/qt_frontend/window.py",
+      "bytes": 40970,
+      "sha256": "3C82E925592215C95DE2FBF32EC4516BCD1F66D9FA618C88920B707E1FD1C454"
+    },
+    {
+      "path": "search_app/qt_frontend/minimal_ui.py",
+      "bytes": 27365,
+      "sha256": "C5AA98680456A8351BBCC93C27DBCC2FB04CABFA1310C6B7FB2E461AFE2623BF"
+    },
+    {
+      "path": "search_app/discovery/__init__.py",
+      "bytes": 1068,
+      "sha256": "D15C73E6E92B2053DB54DBA1C3F5CB780BD2F04209F8D6C074B4BDB099822105"
+    },
+    {
+      "path": "search_app/tests/test_reading_interactions.py",
+      "bytes": 9654,
+      "sha256": "DA7C7BA59852DD380E718645F8345DB4A3904CCAF96F2EC2BE96D95C308FA71D"
+    },
+    {
+      "path": "docs/discovery_integration/READING_FIX_0_3_1.md",
+      "bytes": 2139,
+      "sha256": "4F1E6E4E222E005BDE43E08244DE97C864260A57ACB0A5F9D847363EFBD2E891"
+    },
+    {
+      "path": "docs/discovery_integration/USER_GUIDE_0_3.md",
+      "bytes": 3045,
+      "sha256": "11BB63A4150B6AC4E459874B88E93990B83A952BA390A98CF38166E634412B44"
+    }
+  ],
+  "reference_behavior": {
+    "click_other_document": "preview and locate clause in app",
+    "click_current_document": "open original file",
+    "control_click": "open original file",
+    "context_menu": [
+      "preview",
+      "open original",
+      "show location",
+      "copy path"
+    ]
+  },
+  "limits": "Original-file line/page positioning depends on the installed reader. Tests use isolated fixtures; real library preview uses a read-only database copy."
+}

@@ -1,0 +1,163 @@
+{
+  "round": "discovery-integration-0.1",
+  "date": "2026-10-28",
+  "status": "runnable-candidate-pending-codex-review",
+  "module_version": "0.2.0",
+  "schema_version": 2,
+  "api_note": "DiscoveryService API unchanged; Catalog.search added dedupe_paths kwarg (default False); Catalog.remove_source added.",
+  "tests": {
+    "baseline_total": 289,
+    "baseline_discovery": 74,
+    "current_total": 305,
+    "new_tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "log": ".tmp/discovery-integration/full-tests-final.log"
+  },
+  "candidate": {
+    "exe": ".\\dist\\discovery-candidate\\镜仔搜索新版\\镜仔搜索新版.exe",
+    "exe_sha256": "4E826209EBF7A2502769FF1CF4252C13D03C543040F4DD0192AD2C0D899C0479",
+    "exe_bytes": 18633041,
+    "built_at": "2026-10-28T22:44:07+0800",
+    "build_manifest": "dist/discovery-candidate/镜仔搜索新版/build-manifest.json",
+    "build_command": ".venv-qt\\Scripts\\python.exe tools\\build_candidate.py",
+    "launch": "dist\\discovery-candidate\\镜仔搜索新版\\镜仔搜索新版.exe --data-dir \".\\.tmp\\discovery-integration\\gui-data\""
+  },
+  "deliverables": {
+    "docs/discovery_integration/IMPLEMENTATION.md": {
+      "path": "docs/discovery_integration/IMPLEMENTATION.md",
+      "bytes": 8590,
+      "sha256": "FEB64D934F6B1E5E1ABCF70465DC8E9CE8B92A4CFFEFAAE26A35C9D0251C7665"
+    },
+    "docs/discovery_integration/FUNCTION_MAP.md": {
+      "path": "docs/discovery_integration/FUNCTION_MAP.md",
+      "bytes": 5454,
+      "sha256": "E09A841F317B75DEFBF7931168FFEDEF50A39B396E9504656D2D26AD705F8B18"
+    },
+    "docs/discovery_integration/VALIDATION.md": {
+      "path": "docs/discovery_integration/VALIDATION.md",
+      "bytes": 6491,
+      "sha256": "0DEDAAC2D487E616304179D4D6C95788587B9020BDBA34C4905C600C2D98AF05"
+    },
+    "docs/discovery_integration/MULTIMODAL_NEXT.md": {
+      "path": "docs/discovery_integration/MULTIMODAL_NEXT.md",
+      "bytes": 5412,
+      "sha256": "3408273925BBEF71256F6631CFC1CF3CC38B3BFC4972CD8FF6DB9332AAB75D2D"
+    },
+    "docs/discovery_integration/HANDOFF.md": {
+      "path": "docs/discovery_integration/HANDOFF.md",
+      "bytes": 5144,
+      "sha256": "21589B077298E77E64E31609803526AD71768D7E3973F548A4A241A96FC0C1C1"
+    }
+  },
+  "modules": {
+    "search_app/discovery/scheduler.py": {
+      "path": "search_app/discovery/scheduler.py",
+      "bytes": 13726,
+      "sha256": "9E949B9F410087765D18F07F57A0C6D7A820F1CCDEF74DAEEDB430426F787B4B"
+    },
+    "search_app/discovery/native_scan.py": {
+      "path": "search_app/discovery/native_scan.py",
+      "bytes": 16218,
+      "sha256": "C531FB549482CB4E99BD48A023C0A4994E2E8BBD90E708F416DF8E4E08D27227"
+    },
+    "search_app/discovery/catalog.py": {
+      "path": "search_app/discovery/catalog.py",
+      "bytes": 35250,
+      "sha256": "23DF1D53BBDFFC0AD3DF8F1884E5A0BFFF9E5B6D4CE6C9A0952FDB9D42DF9368"
+    },
+    "search_app/qt_frontend/discovery_ui.py": {
+      "path": "search_app/qt_frontend/discovery_ui.py",
+      "bytes": 28649,
+      "sha256": "A5E5452D710E0751008696123A68B588E1E546147A95F57520DA72D04BC2D8E4"
+    },
+    "search_app/qt_frontend/window.py": {
+      "path": "search_app/qt_frontend/window.py",
+      "bytes": 39367,
+      "sha256": "F9D5F8C85B2CFE26E7452B35647EBAF63E63BF17D465F59F6AE378525CCDE21F"
+    },
+    "search_app/qt_frontend/minimal_ui.py": {
+      "path": "search_app/qt_frontend/minimal_ui.py",
+      "bytes": 25188,
+      "sha256": "FA19BA5871B73FD04A0F7690914D2752D9D5A3B739B97E0A968F3D0A23A155D1"
+    },
+    "search_app/qt_frontend/tools.py": {
+      "path": "search_app/qt_frontend/tools.py",
+      "bytes": 51360,
+      "sha256": "648A0F6E670E862BC02559A38331CA985210E0F5DA2D1B68CBEE4DDB011F557B"
+    }
+  },
+  "tests_files": {
+    "search_app/tests/test_discovery_scheduler.py": {
+      "path": "search_app/tests/test_discovery_scheduler.py",
+      "bytes": 5485,
+      "sha256": "1ED2ED8E5E006BC1859BFE72957D0A341E04A213381AB692EF3D104AEADC3CBE"
+    },
+    "search_app/tests/test_discovery_native.py": {
+      "path": "search_app/tests/test_discovery_native.py",
+      "bytes": 5729,
+      "sha256": "B9A4F8760F7C6DAA1CA05B2DB66C7F578D9A6B350D5E45017E74D73DB6BFC7BF"
+    },
+    "search_app/tests/test_discovery_ui.py": {
+      "path": "search_app/tests/test_discovery_ui.py",
+      "bytes": 4946,
+      "sha256": "1CE29E92BCFB3788305BBF047521D8CA89839977E67746EF379D94FF2A905D4B"
+    },
+    "search_app/tests/test_qt_frontend.py": {
+      "path": "search_app/tests/test_qt_frontend.py",
+      "bytes": 28242,
+      "sha256": "FDA13D9F5185873AEFCCBD66333EC915C647FE016513C43AFF8B32F95F8EB618"
+    }
+  },
+  "protected_unchanged": {
+    "index.db": {
+      "sha256": "133A2F3D415CF962904FE4568416B126A6159B7B1CB693C9C3113CBBFF366A26",
+      "mtime": "2026-10-27T05:34:00.0291674Z",
+      "bytes": 356282368
+    },
+    "镜仔搜索.exe": {
+      "sha256": "782623571417574736DA5C561792B00B30892C775ACAC3905C155DFF75EB0E64",
+      "mtime": "2026-10-27T08:50:23.2833781Z",
+      "bytes": 235415550
+    },
+    "config.json": {
+      "sha256": "7F57A524D55EAE28D7594E60F93CC15DB64ED2F5BA3165C325CE5503DCAB7633",
+      "mtime": "2026-10-28T10:46:36.3958349Z",
+      "bytes": 1681
+    },
+    "镜仔搜索新版\\镜仔搜索新版.exe": {
+      "sha256": "D87A71D350A02DB87CC9CC069B1D272E3A34030B4EFA3997F3404B0B6834EB39",
+      "mtime": "2026-10-28T07:40:29.5840484Z",
+      "bytes": 18526538
+    },
+    "config.qt.json": {
+      "sha256": "B8F85AA507B10416A648DD22B2B7B011EA165153415A6F3B4B81F9FF900242C4",
+      "mtime": "2026-10-28T10:46:21.6865525Z",
+      "bytes": 2493
+    }
+  },
+  "library_unchanged": {
+    "newest": "2026-09-14T07:58:24.9296264Z",
+    "files": 223,
+    "bytes": 583528932
+  },
+  "real_verified": [
+    "305 automatic tests (289 baseline + 16 new)",
+    "real sample end-to-end increment (rename/delete/move-in, boundary)",
+    "F: real bounded USN read 1000 records",
+    "100k synthetic catalog re-test",
+    "candidate EXE isolated launch, range panel, auto-scan 60000 files",
+    "candidate EXE 20x minimize/restore (Ghost ShowWindow)",
+    "candidate EXE single-instance forward + explore search/result/preview"
+  ],
+  "simulated_only": [
+    "native full enumeration via synthetic MFT records (test_discovery_native)",
+    "USN malformed/unknown records, cross-chunk, journal gaps (inherited from prework; unchanged)"
+  ],
+  "not_done": [
+    "full real F: volume native build (only bounded 1000-record capability)",
+    "real Ollama model Q&A, web search, mobile pairing (external service)",
+    "multimodal image/OCR/video/audio retrieval (design only in MULTIMODAL_NEXT.md)"
+  ]
+}
